@@ -1,0 +1,156 @@
+body {
+  background-color: #eaf0f1;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .heading {
+    margin: 1rem;
+  }
+}
+
+.ham {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .ham {
+    display: block;
+    position: absolute;
+    top: 1.6rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+header .flex-ul {
+  display: flex;
+}
+
+@media (max-width: 600px) {
+  header .flex-ul {
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+  }
+}
+
+header .flex-ul li {
+  padding: 1rem;
+}
+
+header .flex-ul li a {
+  color: black;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  header .show-ul {
+    height: 10rem;
+  }
+}
+
+form {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form #txt, form #url {
+  width: 20rem;
+  margin: 0.5rem;
+  padding: 0.6rem;
+  outline: none;
+}
+
+form #add {
+  outline: none;
+  cursor: pointer;
+  padding: 0.3rem;
+  color: #fff;
+  width: 4rem;
+  border-radius: 3px;
+  border: none;
+  background-color: cornflowerblue;
+}
+
+.bookmarks {
+  margin-top: 3rem;
+  width: 50%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookmarks .book-items .li-items {
+  width: 30rem;
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .bookmarks .book-items .li-items {
+    width: 15rem;
+  }
+}
+
+.bookmarks .book-items .li-items a {
+  text-decoration: underline;
+}
+
+.bookmarks .book-items .li-items .rem {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.alert {
+  color: #fff;
+  text-align: center;
+  width: 12rem;
+  padding: 0.3rem;
+  margin: 2rem auto;
+}
+
+.red {
+  background-color: #e44236;
+}
+
+.green {
+  background-color: #45ce30;
+}
