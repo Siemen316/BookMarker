@@ -82,6 +82,12 @@ form #txt, form #url {
   outline: none;
 }
 
+@media (max-width: 600px) {
+  form #txt, form #url {
+    padding: 0.9rem;
+  }
+}
+
 form #add {
   outline: none;
   cursor: pointer;
@@ -91,6 +97,13 @@ form #add {
   border-radius: 3px;
   border: none;
   background-color: cornflowerblue;
+}
+
+@media (max-width: 600px) {
+  form #add {
+    padding: 0.5rem;
+    width: 5rem;
+  }
 }
 
 .bookmarks {

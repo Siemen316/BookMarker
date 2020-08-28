@@ -71,10 +71,15 @@ form {
     margin: 0.5rem;
     padding: 0.6rem;
     outline: none;
+
+    @media (max-width: 600px) {
+      padding: 0.9rem;
+    }
   }
   #url {
     @extend #txt;
   }
+
   #add {
     outline: none;
     cursor: pointer;
@@ -84,6 +89,11 @@ form {
     border-radius: 3px;
     border: none;
     background-color: cornflowerblue;
+
+    @media (max-width: 600px) {
+      padding: 0.5rem;
+      width: 5rem;
+    }
   }
 }
 
